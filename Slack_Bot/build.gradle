@@ -26,6 +26,12 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+	// 슬랙봇
+	implementation("com.slack.api:bolt:1.27.3")
+	implementation("com.slack.api:bolt-servlet:1.27.3")
+	implementation("com.slack.api:bolt-jetty:1.27.3")
 }
 
 tasks.named('test') {
