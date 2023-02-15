@@ -13,6 +13,6 @@ public class SlackScheduler {
     private final SlackService slackService;
     @Scheduled(cron="0 0/1 * * * *") //1분
     public void todayCocktail(){
-        slackService.postSlackMessage("테스트");
+        slackService.postSlackMessage(":wave: 테스트중");
     }
 }
